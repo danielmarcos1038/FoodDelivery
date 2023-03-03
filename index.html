@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driven Eats</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="topo">
+                <h1>DanielEats</h1>
+                <p>Sua comida em 6 minutos</p>
+            </div>
+        </header>
+        <main>
+            <div class="prato">
+                <h2>Primeiro, seu prato</h2>
+                <div class="primeiro">
+                    <div class="cardapio" onclick="selecionar(this)">
+                        <div class="frango"><img src="/imagens/frango_yin_yang 1.png" alt="frango"></div>
+                        <div class="texto">
+                            <h3>Frango</h3>
+                            <p>Um pouco de batata, um pouco de salada</p>
+                            <p>R$ 14.90</p>
+                        </div>
+                    </div>
+                    <div class="cardapio" onclick="selecionar(this)">
+                        <div class="frango"><img src="/imagens/frango_yin_yang 1.png" alt="frango"></div>
+                        <div class="texto">
+                            <h3>Carne</h3>
+                            <p>Um pouco de salada</p>
+                            <p>R$ 19.90</p>
+                        </div>
+                    </div>
+                    <div class="cardapio" onclick="selecionar(this)">
+                        <div class="frango"><img src="/imagens/frango_yin_yang 1.png" alt="frango"></div>
+                        <div class="texto">
+                            <h3>Peixe</h3>
+                            <p>Um pouco de batata</p>
+                            <p>R$ 17.90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bebida">
+                <h2>Agora, sua bebida</h2>
+                <div class="primeiro">
+                    <div class="cardapio1" onclick="selecionar1(this)">
+                        <div class="coca"><img src="/imagens/coquinha_gelada 1.png" alt="coca"></div>
+                        <div class="texto">
+                            <h3>Coquinha</h3>
+                            <p>Lata 400ml</p>
+                            <p>R$ 4.90</p>
+                        </div>
+                    </div>
+                    <div class="cardapio1" onclick="selecionar1(this)">
+                        <div class="coca"><img src="/imagens/coquinha_gelada 1.png" alt="coca"></div>
+                        <div class="texto">
+                            <h3>Pepsi</h3>
+                            <p>Lata 380ml</p>
+                            <p>R$ 3.90</p>
+                        </div>
+                    </div>
+                    <div class="cardapio1" onclick="selecionar1(this)">
+                        <div class="coca"><img src="/imagens/coquinha_gelada 1.png" alt="coca"></div>
+                        <div class="texto">
+                            <h3>Fanta</h3>
+                            <p>Lata 350ml</p>
+                            <p>R$ 2.90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sobremesa">
+                <h2>Por fim, sua sobremesa</h2>
+                <div class="primeiro">
+                    <div class="cardapio2" onclick="selecionar2(this)">
+                        <div class="pudim"><img src="/imagens/pudim 1.png" alt="frango"></div>
+                        <div class="texto">
+                            <h3>Pudim</h3>
+                            <p>Apenas pudim</p>
+                            <p>R$ 7.90</p>
+                        </div>
+                    </div>
+                    <div class="cardapio2" onclick="selecionar2(this)">
+                        <div class="pudim"><img src="/imagens/pudim 1.png" alt="frango"></div>
+                        <div class="texto">
+                            <h3>Pave</h3>
+                            <p>Apenas</p>
+                            <p>R$ 6.90</p>
+                        </div>
+                    </div>
+                    <div class="cardapio2" onclick="selecionar2(this)">
+                        <div class="pudim"><img src="/imagens/pudim 1.png" alt="frango"></div>
+                        <div class="texto">
+                            <h3>Sorvete</h3>
+                            <p>Pudim</p>
+                            <p>R$ 5.90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="rodape">
+                <p>Selecione os 3 itens
+                    para fechar o pedido</p>
+            </div>
+            <div class="rodape1 escondido" onclick="painel()">
+                <p>Fechar pedido</p>
+            </div>
+        </footer>
+    </div>
+    <div class="alerta escondido">
+        <h2>Confirme seu pedido</h2>
+        <div class="valores">
+            <div class="alerta-meio-nome">
+                <p class="comida">Frango Yin Yang</p>
+                <p class="bebida-selec">Coquinha gelada</p>
+                <p class="doce">Pudim</p>
+                <p class="total">TOTAL</p>
+            </div>
+            <div class="alerta-meio-preco">
+                <p class="comida-preco">14,90</p>
+                <p class="bebida-preco">4,90</p>
+                <p class="doce-preco">4,90</p>
+                <p class="total-preco">R$ 27,70</p>
+            </div>
+        </div>
+        <div class="alerta-base" onclick="whats()">
+            <h4>Tudo certo, pode pedir!</h4>
+        </div>
+        <h5 onclick="hide()">Cancelar</h5>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
